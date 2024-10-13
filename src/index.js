@@ -1,9 +1,9 @@
 const express = require("express");
 const fs = require("fs");
 
-// if (!process.env.PORT) {
-//     throw new Error("Please specify the port number for the HTTP server with the environment variable PORT.");
-// }
+if (!process.env.PORT) {
+    throw new Error("Please specify the port number for the HTTP server with the environment variable PORT.");
+}
 
 const app = express();
 const PORT = process.env.PORT || 3000;
